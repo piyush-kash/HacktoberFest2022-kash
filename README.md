@@ -1,17 +1,19 @@
 # HacktoberFest2022-kash
-$Contribution for HacktoberFest 2022 Accepted
+![Screenshot 2022-09-30 234703](https://user-images.githubusercontent.com/47898529/193336604-af1f67b0-664d-43cd-a555-3d6501fd26ae.jpg)
 
-Yes, it's that time of the Year Again !!!
-Start contributing to this repo adhering to the rules below:
+## Contribution for HacktoberFest 2022 Accepted
 
-*Fork this Repository 
-*Mark it Star 
-*Upload Your file (make sure it's not already present in this Repo)
-*Contribute and then create a Pull Request
-| Contribute your Code with Proper problem statement/Title |
+*Yes, it's that time of the Year Again !!!*
+### Start contributing to this repo adhering to the rules below:
 
-//Java , Python & C++ codes accepted only
+* Fork this Repository 
+* Mark it Star 
+* Upload Your file (make sure it's not already present in this Repo)
+* Contribute and then create a Pull Request
+> Contribute your Code with Proper problem statement/Title 
 
-Follow the above steps Only then will your PR be merged.
+**_Java , Python & C++_ codes accepted only**
 
-Happy Contributing !!
+<sub> Follow the above steps Only then will your PR be merged. </sub>
+
+:+1: Happy Contributing !!
