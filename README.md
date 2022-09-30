@@ -8,7 +8,7 @@
 
 * Fork this Repository 
 * Mark it Star 
-* Upload Your file (make sure it's not already present in this Repo)
+* Upload Your file in its respective folder (make sure it's not already present in the Repo)
 * Contribute and then create a Pull Request
 > Contribute your Code with Proper problem statement/Title 
 
