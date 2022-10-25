@@ -1,0 +1,23 @@
+class Solution:
+    def addOperators(self, num: str, target: int) -> List[str]:
+        def DFS(num_str: str = "", prev_exp_str: str = "", prev_eval: int = 0, last_operand: int = 0): # for example, num = "2307", target = 16
+            if num_str == "" and prev_eval == target: # terminal leaf node
+                res.append(prev_exp_str)
+                return
+            for i in range(len(num_str)):
+                if i>0 and num_str[0] == "0": # skipping any operands with leading zeros, namely, "00" ~ "09"
+                    continue
+                this_operand_str = num_str[:i+1] # "2", "23", "230", "2307"
+                this_operand = int(this_operand_str)
+                remaining_str = num_str[i+1:] # "307", "07", "7"
+                if prev_exp_str == "":
+                    DFS(remaining_str, this_operand_str, this_operand, this_operand)
+                else:
+                    DFS(remaining_str, prev_exp_str+"+"+this_operand_str, prev_eval+this_operand,                           this_operand)
+                    DFS(remaining_str, prev_exp_str+"-"+this_operand_str, prev_eval-this_operand,                          -this_operand)
+                    DFS(remaining_str, prev_exp_str+"*"+this_operand_str, prev_eval-last_operand+last_operand*this_operand, last_operand*this_operand)
+                    # 1+2 --> 1+2*3 ==> we need to do 1+2-2+2*3. undo the last operand
+                    # 7+1*2 --> 7+1*2*3 ==> we need to 7+(1*2)-(1*2)+(1*2*3). undo the last operand
+        res = []
+        DFS(num)
+        return res
